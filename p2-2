@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Student {
+private:
+    int id;
+    string name;
+    string lastname;
+    double grade;
+
+public:
+    Student (int studentId, string studentName, string studentLastname, double studentGrade) {
+        id = studentId;
+        name = studentName;
+        lastname = studentLastname;
+        grade = studentGrade;
+    }
+    double getGrade() { return grade; }
+};
+
+class Teacher {
+private:
+    int id;
+    string name;
+    string lastname;
+    double salary;
+
+public:
+    Teacher (int teacherId, string teacherName, string teacherLastname, double teacherSalary) {
+        id = teacherId;
+        name = teacherName;
+        lastname = teacherLastname;
+        salary = teacherSalary;
+    }
+    double getSalary() {return salary;}
+};
